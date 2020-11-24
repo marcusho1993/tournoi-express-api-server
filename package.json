@@ -28,5 +28,18 @@
   "devDependencies": {
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "description": "tournoi api server",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusho1993/tournoi-express-api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcusho1993/tournoi-express-api-server/issues"
+  },
+  "homepage": "https://github.com/marcusho1993/tournoi-express-api-server#readme"
 }
