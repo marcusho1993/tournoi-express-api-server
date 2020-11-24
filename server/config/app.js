@@ -6,6 +6,7 @@ const pretty = require('express-prettify');
 const auth = require('../middleware/auth');
 
 // Custom modules
+const indexRouter = require('../routes/index');
 const registerRouter = require('../routes/register');
 const authRouter = require('../routes/auth');
 const tournamentsRouter = require('../routes/tournaments');
@@ -28,6 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(pretty({ query: 'pretty' }));
 
 // Routes setup
+app.use('/', indexRouter);
 app.use('/api/register', registerRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/tournaments', tournamentsRouter);
