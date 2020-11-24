@@ -14,6 +14,14 @@ Port = 5000
 4. Add "proxy": "http://localhost:5000/" to the `package.json` at the **client** side if you are running both servers locally. If you are using the online api server then change the proxy link to the heroku URL
 5. Use `npm run dev` to run both local backend and frontend servers concurrently
 6. Or `cd client` into client side and use `ng server --open` to run the client side server solely when using online api server
+7. Add the below scripts to package.json
+
+```comment
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+```
 
 ## Remark: To get prettified json data, add ?pretty at the end of the apis
 
