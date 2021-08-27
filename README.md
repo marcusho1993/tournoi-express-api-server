@@ -4,7 +4,7 @@
 
 Port = 5000
 
-## Download this file [config.zip](Tournoi%20API%20Document%2057137b697a8c42f7953adedffebc98a8/config.zip)
+## config file is not included in this repo. To access MongoDB, please add you own config file to the project.
 
 ## Dev instruction
 
